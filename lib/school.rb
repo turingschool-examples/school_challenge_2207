@@ -27,5 +27,14 @@ class School
     def standard_student_names
         @student_names.map{ |name| name.downcase.capitalize }
     end
+
+    def convert_end_time_to_clock_time
+        hour = @start_time.split(":").first.to_i + @hours_in_school_day
+        if hour > 12
+            hour -= 12
+        end
+        minute = @start_time.split(":").last
+        hour.to_s + ":" + minute
+    end
         
 end

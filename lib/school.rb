@@ -19,5 +19,9 @@ class School
         minute = @start_time.split(":").last
         hour.to_s + ":" + minute
     end
+
+    def is_full_time?
+        @hours_in_school_day > 4
+    end
         
 end

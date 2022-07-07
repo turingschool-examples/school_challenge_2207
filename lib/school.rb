@@ -11,4 +11,9 @@ def add_student_name(name)
   @student_names << name
 end
 
+def end_time
+  end_time = @start_time.to_i + @hours_in_school_day.to_i
+  end_time.to_s + ":00"
+end
+
 end

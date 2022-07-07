@@ -1,3 +1,5 @@
+require 'time'
+
 class School
 
     attr_reader :hours_in_school_day, :start_time, :student_names, :end_time
@@ -23,5 +25,10 @@ class School
             capitalized_names << name.capitalize
         end
         capitalized_names
+    end
+
+    def convert_end_time_to_clock_time
+        time = Time.parse(end_time)
+        time = time.strftime(("%l:%M")).strip
     end
 end

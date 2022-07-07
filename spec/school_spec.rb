@@ -50,4 +50,17 @@ RSpec.describe 'School Spec Harness' do
       expect(@school1.end_time).to eq('16:00')
     end
   end
+
+    describe 'Iteration 3' do
+      it '4. returns if a student is full time or not' do
+        expect(@school1.is_full_time?).to eq(true)
+      end
+
+      it '5. returns a list of student names capitalized' do
+        @school1.add_student_name('Aurora')
+        @school1.add_student_name('Tim')
+        @school1.add_student_name('Megan')
+        expect(@school1.standard_student_names).to eq(["Aurora", "Tim", "Megan"])
+      end
+    end
 end

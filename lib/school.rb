@@ -26,4 +26,8 @@ class School
         end
         cap_array
     end
+
+    def convert_end_time_to_clock_time
+        (end_time.to_i - 12).to_s + ":00"
+    end
 end

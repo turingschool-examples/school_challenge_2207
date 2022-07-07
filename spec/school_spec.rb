@@ -63,4 +63,10 @@ RSpec.describe 'School Spec Harness' do
         expect(@school1.standard_student_names).to eq(["Aurora", "Tim", "Megan"])
       end
     end
+
+    describe 'Iteration 4' do
+      it 'converts military time to standard time' do
+        expect(@school1.convert_end_time_to_clock_time).to eq("4:00")
+      end
+    end
 end

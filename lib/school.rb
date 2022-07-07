@@ -21,4 +21,3 @@ class School
   end 
   cap_names
 end 
-end 

@@ -1,7 +1,7 @@
 require 'rspec'
 require 'pry'
-require 'simplecov'
-SimpleCov.start
+# require 'simplecov'
+# SimpleCov.start
 require './lib/school'
 
 
@@ -11,12 +11,12 @@ end
 
 RSpec.describe 'School Spec Harness' do
   before :each do
-    @school1 = School.new('9:00', 7)
+    @school1 = School.new('9:00', 7)it 
     @school2 = School.new('10:00', 2)
   end
 
   describe 'Iteration 1' do
-    xit '1. School Instantiation' do
+    it '1. School Instantiation' do
       expect(School).to respond_to(:new).with(2).argument
       expect(@school1).to be_an_instance_of(School)
 

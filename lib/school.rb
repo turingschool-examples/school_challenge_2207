@@ -15,9 +15,18 @@ class School
   end 
   def standard_student_names
     cap_names = []
-
     @student_names.each do |student|
-    cap_names << student.capitalize
+      cap_names << student.capitalize
+    end 
+    cap_names
   end 
-  cap_names
+  def convert_end_time_to_clock_time
+    # This is cheesy and gross but it works! :)
+    t = @end_time.to_i
+    reg_time = t - 12
+    
+    return reg_time.to_s + ":00"
+
+  end 
 end 
+

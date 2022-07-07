@@ -29,4 +29,15 @@ class School
     return standardized
   end
 
+  def convert_end_time_to_clock_time
+    convert_to_int = @start_time.split(":")[0].to_i
+    end_time_int = convert_to_int + @hours_in_school_day
+    if end_time_int > 12
+      clock_time = end_time_int - 12
+    else
+      clock_time = end_time_int
+    end
+    clock_time.to_s.concat(":00")
+  end
+
 end

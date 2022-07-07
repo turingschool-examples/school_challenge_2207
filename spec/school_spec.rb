@@ -54,7 +54,7 @@ RSpec.describe 'School Spec Harness' do
   describe 'Iteration 3' do
     it '4. School #is_full_time?' do
       expect(@school1.is_full_time?).to eq(true)
-      expect(@school2.is_full_time?).to eq(true)
+      expect(@school2.is_full_time?).to eq(false)
     end
 
     it '5. School #standard_student_names' do

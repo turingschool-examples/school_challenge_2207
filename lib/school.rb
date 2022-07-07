@@ -13,7 +13,7 @@ class School
     end
 
     def add_student_name(name)
-        @student_names << name
+        @student_names << name.capitalize
     end
 
     def end_time

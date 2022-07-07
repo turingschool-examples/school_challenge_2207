@@ -57,12 +57,12 @@ RSpec.describe 'School Spec Harness' do
       expect(@school2.is_full_time?).to be false
     end
 
-    xit '5. School #standard_student_names' do
-      @school_1.add_student_name('Aurora')
-      @school_1.add_student_name('tim')
-      @school_1.add_student_name('meGan')
+    it '5. School #standard_student_names' do
+      @school1.add_student_name('Aurora')
+      @school1.add_student_name('tim')
+      @school1.add_student_name('meGan')
 
-      expect(@school_1.standard_student_names).to eq(['Aurora', 'Tim', 'Megan'])
+      expect(@school1.standard_student_names).to eq(['Aurora', 'Tim', 'Megan'])
     end
   end
 

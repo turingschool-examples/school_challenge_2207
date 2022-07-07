@@ -1,7 +1,7 @@
 require 'rspec'
 require 'pry'
-require 'simplecov'
-SimpleCov.start
+# require 'simplecov'
+# SimpleCov.start
 require './lib/school'
 
 

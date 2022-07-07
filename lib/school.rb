@@ -31,7 +31,7 @@ class School
     end 
 
     def convert_end_time_to_clock_time
-        @end_time =  ((@start_time.to_i + @hours_in_school_day.to_i) - 12).to_s.concat(':00')       
+        ((@start_time.to_i + @hours_in_school_day.to_i) - 12).to_s.concat(':00')       
     end 
     
 

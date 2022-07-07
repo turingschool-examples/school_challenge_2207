@@ -52,18 +52,25 @@ RSpec.describe 'School Spec Harness' do
     end
   end
 
-  describe 'Iteration 3 do'
-    xit 'can tell if a school is full time' do
+  describe 'Iteration 3 ' do
+    it 'can tell if a school is full time' do
       school = School.new('9:00', 7)
       expect(school.is_full_time?).to be(true)
     end
 
-    xit 'has a method to standardize student names' do
+    it 'has a method to standardize student names' do
       school = School.new('9:00', 7)
       school.add_student_name('Aurora')
       school.add_student_name('tim')
       school.add_student_name('megan')
-
       expect(school.standard_student_names).to eq(["Aurora", "Tim", "Megan"])
     end
   end
+
+  describe 'Iteration 4' do
+    it 'has a method to convert end time to clock time' do
+      school = School.new('9:00', 7)
+      expect(school.convert_end_time_to_clock_time).to eq("4:00")
+    end
+  end
+end

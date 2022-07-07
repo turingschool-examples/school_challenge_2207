@@ -58,13 +58,13 @@ RSpec.describe 'School Spec Harness' do
       expect(@school2.is_full_time?).to eq(false)
     end
 
-    xit '5. School #add_student_name capitalizes' do
+    it '5. School #add_student_name capitalizes' do
       school = School.new('9:00', 7)
       school.add_student_name('Aurora')
       school.add_student_name('tim')
       school.add_student_name('megan')
 
-      expect(school.standard_student_names).to eq(['Megan', 'Aurora', 'Tim'])
+      expect(school.standard_student_names).to eq(["Aurora", "Tim", "Megan"])
     end
   end
 

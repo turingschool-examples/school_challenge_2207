@@ -57,5 +57,16 @@ RSpec.describe 'School Spec Harness' do
 
       expect(school.is_full_time?).to eq(true)
     end
+
+    it '5. School #standard_student_names' do
+      school = School.new('9:00', 7)
+
+      school.add_student_name('Megan')
+      school.add_student_name('Tim')
+      school.add_student_name('Aurora')
+
+      expect(school.standard_student_names).to eq(['Megan', 'Tim', 'Aurora'])
+    end
+
   end
 end

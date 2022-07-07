@@ -35,8 +35,17 @@ class School
         @student_names.each do |name|
             standard_names << name.capitalize
         end
-        
+
         return standard_names
+    end
+
+    def convert_end_time_to_clock_time
+        @end_time = ((@start_time.tr(':', '').to_i) + (@hours_in_school_day * 100))
+        if @end_time > 1200
+            @end_time -= 1200
+        end
+        @end_time = @end_time.to_s.insert(-3,':')
+        return @end_time
     end
 
 end

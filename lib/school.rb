@@ -18,4 +18,12 @@ class School
     new_end_hr.to_s % 24 + ":00"
   end
 
+  def is_full_time?
+    4 < hours_in_school_day
+  end
+
+  def standard_student_names
+    @student_names.map { |student| student.capitalize }
+  end
+
 end

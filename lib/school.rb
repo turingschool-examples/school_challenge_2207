@@ -9,4 +9,8 @@ class School
         @start_time = start 
         @student_names = names
     end
+
+    def add_student_name(name)
+        @student_names << name
+    end
 end

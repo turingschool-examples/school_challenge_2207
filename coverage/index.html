@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-07T11:12:07-06:00">2022-07-07T11:12:07-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-07T11:19:47-06:00">2022-07-07T11:19:47-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.73
+         3.89
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>15</b> relevant lines,
-    <span class="green"><b>15</b> lines covered</span> and
+    <b>18</b> relevant lines,
+    <span class="green"><b>18</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -73,11 +73,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#b63f2da0e9dbb8840ce6e248691a610012adcc97" class="src_link" title="lib/school.rb">lib/school.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">31</td>
-            <td class="cell--number">15</td>
-            <td class="cell--number">15</td>
+            <td class="cell--number">33</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">18</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">3.73</td>
+            <td class="cell--number">3.89</td>
             
           </tr>
         
@@ -112,8 +112,8 @@
     
 
     <div class="t-line-summary">
-      <b>15</b> relevant lines.
-      <span class="green"><b>15</b> lines covered</span> and
+      <b>18</b> relevant lines.
+      <span class="green"><b>18</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -191,8 +191,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="7">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="15" data-linenumber="7">
+            <span class="hits">15</span>
             
 
             
@@ -202,8 +202,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="8">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="15" data-linenumber="8">
+            <span class="hits">15</span>
             
 
             
@@ -213,8 +213,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="9">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="15" data-linenumber="9">
+            <span class="hits">15</span>
             
 
             
@@ -301,8 +301,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="17">
+            <span class="hits">2</span>
             
 
             
@@ -312,13 +312,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="18">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="18">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    new_end_hr.to_s % 24 + &quot;:00&quot;</code>
+            <code class="ruby">    (new_end_hr.to_s % 24).concat &quot;:00&quot;</code>
           </li>
         </div>
       
@@ -417,7 +417,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -428,12 +428,45 @@
 
             
 
-            <code class="ruby">    </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="29">
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def convert_end_time_to_clock_time</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    new_end_time_12hr = end_time.to_i % 12</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="31">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    new_end_time_12hr.to_s.concat &quot;:00&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
             
             
 
@@ -444,18 +477,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="30">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="31">
+          <li class="never" data-hits="" data-linenumber="33">
             
             
 

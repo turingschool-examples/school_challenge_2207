@@ -20,9 +20,10 @@ class School
   end
 
   def standard_student_names
+    standard_student_names = []
     @student_names.each do |name|
-      name.capitalize 
+      standard_student_names << name.capitalize
     end
+    return standard_student_names
   end
-
 end

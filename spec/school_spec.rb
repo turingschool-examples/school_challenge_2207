@@ -52,17 +52,23 @@ RSpec.describe 'School Spec Harness' do
     end
   end
 
-RSpec describe 'Iteration 3' do
-    it 'School #is_full_time?' do
+  describe 'Iteration 3' do
+    it '4. School #is_full_time?' do
 
       school = School.new('9:00', 7)
-require 'pry'; binding.pry
-      expect(school.is_full_time?).to eq(true)
 
+      expect(school.is_full_time?).to eq(true)
+    end
+
+    it '5. School #standard_student_names' do
+
+      school = School.new('9:00', 7)
 
       school.add_student_name('Aurora')
       school.add_student_name('tim')
       school.add_student_name('megan')
 
       expect(school.standard_student_names).to eq(["Aurora", "Tim", "Megan"])
+    end
+  end
 end

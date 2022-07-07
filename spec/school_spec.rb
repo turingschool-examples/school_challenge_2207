@@ -45,5 +45,9 @@ RSpec.describe("School Spec Harness") do
       expect(@school1).to(respond_to(:end_time).with(0).argument)
       expect(@school1.end_time).to(eq("16:00"))
     end
+
+    it("is full time") do
+      expect(@school1.is_full_time?).to(eq(true))
+    end
   end
 end

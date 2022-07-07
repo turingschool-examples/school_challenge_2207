@@ -16,4 +16,17 @@ class School
     add_hours.to_s.concat(":00")
   end
 
+  def is_full_time?
+    return true if @hours_in_school_day > 4
+    false
+  end
+
+  def standard_student_names
+    standardized = []
+    @student_names.each do |name|
+      standardized << name.downcase.capitalize
+    end
+    return standardized
+  end
+
 end

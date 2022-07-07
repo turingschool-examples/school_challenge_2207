@@ -12,6 +12,7 @@ class School
   end
 
   def end_time()
-   end_time == @hours_in_school_day + @start_time
+   @start_time.to_i += @hours_in_school_day
   end
+
 end

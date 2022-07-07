@@ -12,4 +12,16 @@ class School
     def add_student_name(name)
         @student_names << name
     end
+
+    def is_full_time?
+        @hours_in_school_day > 6
+    end
+
+    def standard_student_names
+        capitalized_names = []
+        @student_names.each do |name|
+            capitalized_names << name.capitalize
+        end
+        capitalized_names
+    end
 end

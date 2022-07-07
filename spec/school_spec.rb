@@ -35,7 +35,7 @@ RSpec.describe 'School Spec Harness' do
   end
 
   describe 'Iteration 2' do
-    xit '2. School #add_student_name' do
+    it '2. School #add_student_name' do
       expect(@school1).to respond_to(:add_student_name).with(1).argument
 
       @school1.add_student_name('Megan')

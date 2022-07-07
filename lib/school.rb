@@ -13,4 +13,17 @@ class School
     def end_time
         (@start_time.to_i + @hours_in_school_day).to_s + ":00"
     end
+
+    def is_full_time?
+        @hours_in_school_day >= 4
+    end
+
+    def standard_student_names
+        cap_array = []
+
+        @student_names.each do |student|
+            cap_array << student.capitalize
+        end
+        cap_array
+    end
 end

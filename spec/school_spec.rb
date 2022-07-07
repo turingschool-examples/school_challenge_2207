@@ -53,12 +53,12 @@ RSpec.describe 'School Spec Harness' do
 
   describe 'Iteration 3' do
     it '4. School #is_full_time?' do
-      expect (@school1).to respond_to(:is_full_time?).with(0).arguement
+      expect(@school1).to respond_to(:is_full_time?).with(0).argument
       expect(@school1.is_full_time?).to eq(true)
       expect(@school2.is_full_time?).to eq(false)
     end
 
-    it '5. School #add_student_name capitalizes' do
+    xit '5. School #add_student_name capitalizes' do
       school = School.new('9:00', 7)
       school.add_student_name('Aurora')
       school.add_student_name('tim')
@@ -66,6 +66,7 @@ RSpec.describe 'School Spec Harness' do
 
       expect(school.standard_student_names).to eq(['Megan', 'Aurora', 'Tim'])
     end
+  end
 
     
 end

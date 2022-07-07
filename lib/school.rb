@@ -14,4 +14,10 @@ class School
         @student_names << name
     end
 
+    def end_time
+        hour = @start_time.split(":").first.to_i + @hours_in_school_day
+        minute = @start_time.split(":").last
+        hour.to_s + ":" + minute
+    end
+        
 end

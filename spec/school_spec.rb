@@ -54,7 +54,7 @@ RSpec.describe 'School Spec Harness' do
   describe 'Iteration 3' do
     it '4. School #is full time?' do
       expect(@school1).to respond_to(:is_full_time?).with(0).argument
-      expect(@school1.is_full_time).to be true
+      expect(@school1.is_full_time?).to be true
     end
 
     it '5. School #add_student_name with capitalization' do

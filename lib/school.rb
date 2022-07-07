@@ -10,9 +10,9 @@ class School
         @student_names << student
     end
 
-    ##def end_time
-    ##    @hours_in_school_day.to_i + @start_time
-    ##end
+    def end_time
+        @hours_in_school_day.to_i + @start_time
+    end
 
     def is_full_time?
         if @hours_in_school_day > 4
@@ -29,6 +29,4 @@ class School
             cap_name << student.name.capitalize
         end
     end
-
-
 end

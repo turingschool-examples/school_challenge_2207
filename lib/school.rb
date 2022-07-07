@@ -7,5 +7,8 @@ attr_reader :start_time, :hours_in_school_day, :student_names
     @student_names = []
   end
 
+def add_student_name(name)
+  @student_names << name
+end
 
 end

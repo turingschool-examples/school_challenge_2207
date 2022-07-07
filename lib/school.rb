@@ -11,10 +11,25 @@ class School
     end
 
     def end_time
-        (start_time.to_i + hours_in_school_day).to_s + ":00"
+        if (start_time.to_i + hours_in_school_day) > 24
+            (start_time.to_i + hours_in_school_day) - 24
+        else
+            start_time.to_i + hours_in_school_day
+        end
+        .to_s + ":00"
+
     end
 
     def is_full_time?
         @hours_in_school_day > 4
+    end
+
+    def convert_end_time_to_clock_time
+        if 24 >= end_time.to_i && end_time.to_i > 12
+            end_time.to_i - 12
+        else 12 <= end_time 
+            end_time.to_i
+        end
+        .to_s + ":00"    
     end
 end

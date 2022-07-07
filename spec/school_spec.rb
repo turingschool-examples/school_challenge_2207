@@ -50,4 +50,13 @@ RSpec.describe 'School Spec Harness' do
       expect(@school1.end_time).to eq('16:00')
     end
   end
+
+  describe 'Iteration 3' do
+    it '4. School #is_full_time?' do
+      expect (@school1).to respond_to(:is_full_time?).with(0).arguement
+      expect(@school1.is_full_time?).to eq(true)
+      expect(@school2.is_full_time?).to eq(false)
+    end
+
+    
 end

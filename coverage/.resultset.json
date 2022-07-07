@@ -1,0 +1,19 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/sandymarie/turing/1module/ics/2207/school_challenge_2207/lib/school.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1657212081
+  }
+}

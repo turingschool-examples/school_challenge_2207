@@ -50,4 +50,11 @@ RSpec.describe("School Spec Harness") do
       expect(@school1.is_full_time?).to(eq(true))
     end
   end
+
+  it("has a standard student function") do
+    @school1.add_student_name("Aurora")
+    @school1.add_student_name("tim")
+    @school1.add_student_name("megan")
+    expect(@school1.standard_student_names).to(eq(["Aurora", "Tim", "Megan"]))
+  end
 end

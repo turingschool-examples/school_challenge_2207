@@ -3,6 +3,7 @@ require 'pry'
 # require 'simplecov'
 # SimpleCov.start
 require './lib/school'
+require 'time'
 
 
 RSpec.configure do |config|
@@ -76,7 +77,8 @@ RSpec.describe 'School Spec Harness' do
     it '6. School #convert_end_time_to_clock_time' do
 
       school = School.new('9:00', 7)
+
       expect(school.convert_end_time_to_clock_time).to eq("4:00")
     end
-    
+  end
 end

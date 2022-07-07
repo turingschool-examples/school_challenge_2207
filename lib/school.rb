@@ -14,7 +14,8 @@ class School
         @student_names = []
         @end_time_integer = start_time.to_i + hours_in_school_day
         @end_time = end_time_integer.to_s + ":00"
-        @standard_student_names = student_names
+        @standard_student_names = student_names.map(&:capitalize)
+    end
 
     def add_student_name(student_name)
         student_names << student_name

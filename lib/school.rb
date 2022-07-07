@@ -15,4 +15,15 @@ class School
     def end_time
         @start_time.to_i + @hours_in_school_day
     end
+
+    def is_full_time?
+        @hours_in_school_day > 4
+    end
+
+    def standard_student_names
+        @student_names.each do |name|
+           @student_names << name.capitalize
+        end
+        return @student_names
+    end
 end

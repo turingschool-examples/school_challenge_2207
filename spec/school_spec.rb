@@ -73,6 +73,7 @@ RSpec.describe 'School Spec Harness' do
     it '6. School #convert_end_time_to_clock_time' do
       expect(@school1).to respond_to(:convert_end_time_to_clock_time).with(0).argument
       expect(@school1.convert_end_time_to_clock_time).to eq("4:00")
+      expect(@school2.convert_end_time_to_clock_time).to eq("12:00")
     end
   end
 end

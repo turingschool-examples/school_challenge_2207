@@ -13,12 +13,20 @@ class School
     end
 
     def add_student_name(name)
-        @student_names << name.capitalize
+        @student_names << name
     end
 
     def end_time
         @end_time = ((@start_time.tr(':', '').to_i) + (@hours_in_school_day * 100)).to_s.insert(-3,':')
         return @end_time
+    end
+
+    def is_full_time?
+        if @hours_in_school_day > 4
+            return true
+        else
+            return false
+        end
     end
 
 end

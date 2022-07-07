@@ -67,6 +67,14 @@ RSpec.describe 'School Spec Harness' do
 
       expect(school.standard_student_names).to eq(['Megan', 'Tim', 'Aurora'])
     end
-
   end
+
+  describe 'Iteration 4' do
+    it '6. School #convert_end_time_to_clock_time' do
+      school = School.new('9:00', 7)
+
+      expect(school.convert_end_time_to_clock_time).to eq("4:00")
+    end
+  end
+
 end

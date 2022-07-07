@@ -29,4 +29,10 @@ class School
       @standard_student_names << student_name.capitalize
     end
   end
+
+  def convert_end_time_to_clock_time
+    clock_time = end_time.to_i - 12
+    clock_time.to_s
+    "#{clock_time.to_s}:00"
+  end
 end
